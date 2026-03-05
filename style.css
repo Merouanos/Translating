@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+  
+  --animate-typing: typing 3s infinite alternate steps(50, end), blink .6s step-end infinite;
+
+ @keyframes typing {
+    0% { width: 0ch; }
+    40% { width: 12.5ch; }
+    100% { width: 12.5ch; }
+  }
+  @keyframes blink {
+    0%, 100% { border-color: transparent }
+    50% { border-color: black }
+  }
+}
+
+/* This replaces your <style> block */
+@layer base {
+  body {
+    @apply font-sans tracking-tight;
+  }
+}
+
+@layer components {
+  nav a {
+    @apply bg-gray-200 font-normal sm:px-4 px-1 py-2 sm:text-base text-sm rounded-3xl transition-all duration-100 hover:brightness-75;
+  }
+
+  article {
+    @apply flex flex-col;
+  }
+
+  article header {
+    @apply font-bold text-2xl tracking-tighter;
+  }
+
+  article footer {
+    @apply font-bold text-gray-500;
+  }
+
+  footer h3 {
+    @apply font-bold text-xl tracking-tighter;
+  }
+  
+  footer h4 {
+    @apply text-gray-500 font-bold;
+  }
+}
