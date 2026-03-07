@@ -2,7 +2,7 @@
 
     window.onscroll = function() {
         
-        if (window.scrollY > 400) {
+        if (window.scrollY > 200) {
             navbar.classList.add('bg-white', 'shadow-md', 'border-b', 'border-slate-200');
             
         } else {

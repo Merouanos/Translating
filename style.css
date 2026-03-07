@@ -20,7 +20,7 @@
 
 @layer base {
   body {
-    @apply font-sans tracking-tight scroll-smooth;
+    @apply font-sans tracking-tight;
   }
 }
 
